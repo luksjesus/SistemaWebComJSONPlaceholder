@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/efa9063ee3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <title>Postagens</title>
+    <link rel="icon" type="imagem/png" href="../imgs/lightsaber.png" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="../imgs/lightsaber.png" alt="logo" class="logo"></a>
+        <div class="container_nav menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars" id="icon"></i>
+                <i class="fa fa-times-circle" id="icon"></i>
+            </label>
+            <nav class="nav menu1">
+                <a class="nav-link" href="post.html">
+                    <font size="4">Postagens</font>
+                </a>
+                <a class="nav-link" href="albuns.html">
+                    <font size="4">Albuns</font>
+                </a>
+                <a class="nav-link" href="todos.html">
+                    <font size="4">Todos</font>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="container main">
+        <div class="row linha">
+            <section class="col-12">
+                <div class="titlePage">
+                    <h2>Postagens</h2>
+                </div>
+                <div class="divTable">
+                    <table id="tablePostagens" class="table display table-bordered table-hover  nowrap">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>userId</th>
+                                <th>id</th>
+                                <th>title</th>
+                                <th>body</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <span>Redes Sociais:</span>
+            <a href="https://www.linkedin.com/in/lucas-sousa-648899115/" target="_blank"><img class="contatos"
+                    src="../imgs/linkedin.png" alt="linkwdin" title="Linkedin"></a>
+            <a href="https://github.com/luksjesus?tab=repositories" target="_blank"><img class="contatos"
+                    src="../imgs/github.png" alt="github" title="GitHub"></a>
+            <a href="https://api.whatsapp.com/send?phone=5531993510352" target="_blank"><img class="contatos"
+                    src="../imgs/whatsapp.png" alt="whatsapp" title="Whatsapp"></a>
+        </div>
+        <div>
+            <span>Copyright © 2020 todos os direitos reservados</span>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
