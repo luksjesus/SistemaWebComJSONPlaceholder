@@ -1,5 +1,5 @@
-Programa de estágio Framework System
-DESAFIO TÉCNICO PADAWANS
+Programa de estágio Framework System<br>
+DESAFIO TÉCNICO PADAWANS<br>
 
 Restrições do problema:
 1 - Construa um menu para acessar 3 telas, cada tela deve conter uma tabela para listar POSTAGENS, ALBUNS e TO-DOs respectivamente. Uma tabela por tela. Lembre-se de permitir ao usuário voltar para o menu principal. As colunas da tabela podem ser de sua escolha, basta verificar quais informações a API te fornece.
