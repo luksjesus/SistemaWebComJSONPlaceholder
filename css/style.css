@@ -25,7 +25,7 @@ html {
 }
 
 .logo {
-  width: 4%;
+  width: 45px;
   float: left;
   clear: both;
   margin-left: 30px;
@@ -122,6 +122,10 @@ footer img {
     z-index: 999;
     max-width: 100% !important;
     overflow: auto;
+    padding-bottom: 50px;
+  }
+  .logo {
+    width: 30px;
   }
   .container_nav {
     display: absolute;
@@ -151,10 +155,10 @@ footer img {
     transition: height 0.3s;
   }
   .menu1 a {
+    margin-top: 50px;
     display: block;
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
     z-index: 2000;
   }
   .menu-icon {
