@@ -1,3 +1,21 @@
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  min-height:100%;
+  position:relative;
+
+}
+head {
+   display: none;
+   position: relative;
+   min-height: 100%;
+}
+html{
+   height: 100%;
+
+}
 .menu a:hover {
   text-decoration: none;
   background-color: #fcc602;
@@ -42,6 +60,7 @@
 .divTable {
   padding: 3px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .boxPage p {
@@ -52,10 +71,11 @@
 }
 
 .footer {
+  margin-top: auto;
+  position: relative;
   width: 100%;
   bottom: 0;
   text-align: center;
-  margin-top: 20px;
   background-color: rgba(120, 77, 152);
   padding: 20px;
   color: white;
@@ -75,18 +95,15 @@ footer img {
   .header {
     background-position: 0px -50px;
     overflow: auto;
+    padding-bottom: 50px;
   }
   .logo {
-    max-width: 30%;
-  }
-  footer img {
-    width: 5%;
-    margin: 5px;
-  }
+    width: 10%;}
 }
 
 @media screen and (min-width: 601px) and (max-width: 980px) {
   .header {
+    height: 50px;
     background-position: 0px -100px;
     overflow: auto;
   }
@@ -94,6 +111,7 @@ footer img {
 
 @media screen and (max-width: 1000px) {
   .header {
+    height: 50px;
     top: 0px;
     z-index: 999;
     max-width: 100% !important;
@@ -134,8 +152,9 @@ footer img {
     z-index: 2000;
   }
   .menu-icon {
-    width: 50px;
-    height: inherit;
+    margin-top: 9px;
+    width: 30px;
+    height: 30px;
     display: block;
     position: absolute;
     top: 10px;
