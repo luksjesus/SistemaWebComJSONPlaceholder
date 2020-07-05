@@ -1,64 +1,39 @@
+const displayLength = 10;
+const cdn = "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json";
 if (document.getElementById('tablePostagens') != null) {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(response => response.json())
-        .then(json => {
-            var DataTable = $('#tablePostagens').DataTable({
-                "language": {
-                    "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json"
-                },
-                "scrollX": true,
-                iDisplayLength: 15,
-                columns: [
-                    { data: 'userId' },
-                    { data: 'id' },
-                    { data: 'title' },
-                    { data: 'body' },
-                ]
-            });
-            DataTable.rows.add(json).draw();
-
-        })
-
+    json = buscarDados(endpoint = 'posts', tableId = 'tablePostagens', columns = ['id', 'title', 'body']);
 }
 if (document.getElementById('tableAlbums') != null) {
-    fetch('https://jsonplaceholder.typicode.com/albums')
-        .then(response => response.json())
-        .then(json => {
-            var DataTable = $('#tableAlbums').DataTable({
-                "language": {
-                    "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json"
-                },
-               // "scrollX": true deixa a tabela responsiva.
-                iDisplayLength: 15,
-                columns: [
-                    { data: 'userId' },
-                    { data: 'id' },
-                    { data: 'title' },
-                ]
-            });
-            DataTable.rows.add(json).draw();
-
-        })
+    json = buscarDados(endpoint = 'albums', tableId = 'tableAlbums', columns = ['userId', 'id', 'title']);
+}
+if (document.getElementById('tableTodos') != null) {
+    json = buscarDados(endpoint = 'todos', tableId = 'tableTodos', columns = ['id', 'title', 'completed']);
 }
 
-if (document.getElementById('tableTodos') != null) {
-    fetch('https://jsonplaceholder.typicode.com/todos')
+// JS GERAL
+function buscarDados(endpoint, tableId, columns) {
+    fetch(`https://jsonplaceholder.typicode.com/${endpoint}`)
         .then(response => response.json())
         .then(json => {
-            var DataTable = $('#tableTodos').DataTable({
-                "language": {
-                    "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json"
-                },
-               // "scrollX": true,
-                iDisplayLength: 15,
-                columns: [
-                    { data: 'userId' },
-                    { data: 'id' },
-                    { data: 'title' },
-                    { data: 'completed' },
-                ]
-            });
-            DataTable.rows.add(json).draw();
+            carregarDados(tableId, columns, json);
+        });
+}
 
-        })
+function carregarDados(tableId, columns, json) {
+    var xArray = [];
+    if (columns.length) {
+        columns.forEach(element => {
+            xArray.push({
+                data: element
+            })
+        });
+    }
+    var DataTable = $(`#${tableId}`).DataTable({
+        "language": {
+            "url": cdn
+        },
+        iDisplayLength: displayLength,
+        columns: xArray
+    });
+    DataTable.rows.add(json).draw();
 }
