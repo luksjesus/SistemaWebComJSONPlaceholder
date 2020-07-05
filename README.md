@@ -1,6 +1,5 @@
  <h2>Programa de estágio Framework System</h2>
                     <h4>DESAFIO TÉCNICO PADAWANS</h2>
-                    <div style=" text-align: justify">
                         <h5>Restrições do problema:</h5>
                         <p>
                             1 - Construa um menu para acessar 3 telas, cada tela deve conter uma tabela para listar POSTAGENS, ALBUNS e 
@@ -14,6 +13,4 @@
                             tecnologias de desenvolvimento: VS Code, JavaScript, Jquery, Bootstrap, HTML5 e CSS3. <br>O designer das páginas foi pensado para ter um toque mais
                             minimalista e clean. Já as cores foram escolhidas pensando na acessibilidade da aplicação, além de terem tonalidades semelhantes as cores
                             utilizadas pela  Framework System.                            
-                        </p>
-                        <p><a href="autor.html">Sobre o autor...</a></p>
-                    </div>
+ </p>
