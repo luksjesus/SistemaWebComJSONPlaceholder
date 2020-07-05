@@ -1,20 +1,18 @@
-body{
+body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
-  min-height:100%;
-  position:relative;
-
+  min-height: 100%;
+  position: relative;
 }
 head {
-   display: none;
-   position: relative;
-   min-height: 100%;
+  display: none;
+  position: relative;
+  min-height: 100%;
 }
-html{
-   height: 100%;
-
+html {
+  height: 100%;
 }
 .menu a:hover {
   text-decoration: none;
@@ -98,7 +96,11 @@ footer img {
     padding-bottom: 50px;
   }
   .logo {
-    width: 10%;}
+    width: 10%;
+  }
+  .footer img {
+    width: 5%;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 980px) {
@@ -152,7 +154,7 @@ footer img {
     z-index: 2000;
   }
   .menu-icon {
-    margin-top: 9px;
+    margin-top: 5px;
     width: 30px;
     height: 30px;
     display: block;
