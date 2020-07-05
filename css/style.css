@@ -77,10 +77,12 @@ html {
   background-color: rgba(120, 77, 152);
   padding: 20px;
   color: white;
+  float: center;
 }
 footer img {
-  width: 1.2%;
-  margin: 5px;
+  width: 15px;
+  margin-bottom: 6px;
+  margin-left: 6px;
 }
 #menuToggle {
   display: none;
@@ -99,7 +101,7 @@ footer img {
     width: 40px;
   }
   .footer img {
-    width: 5%;
+    width:15px;
   }
 }
 
