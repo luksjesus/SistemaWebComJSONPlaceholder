@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,13 +12,13 @@
     <script src="https://kit.fontawesome.com/efa9063ee3.js" crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf8"
         src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-    <title>Todos</title>
-    <link rel="icon" type="imagem/png" href="../imgs/lightsaber.png" />
+    <title>Albuns</title>
+    <link rel="icon" type="imagem/png" href="imgs/lightsaber.png" />
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html"><img src="../imgs/lightsaber.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="imgs/lightsaber.png" alt="logo" class="logo"></a>
         <div class="container_nav menu">
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle" class="menu-icon">
@@ -33,7 +33,7 @@
                     <font size="4">Albuns</font>
                 </a>
                 <a class="nav-link" href="todos.html">
-                    <font size="4">Todos</font>
+                    <font size="4">To Dos</font>
                 </a>
             </nav>
         </div>
@@ -42,15 +42,16 @@
         <div class="row linha">
             <section class="col-12">
                 <div class="titlePage">
-                    <h2>Todos</h2>
+                    <h2>Albuns</h2>
                 </div>
                 <div class="divTable">
-                    <table id="tableTodos" class="table display table-bordered table-hover">
+                    <table id="tableAlbums" class="table display table-bordered table-hover  ">
+                        <!--class nowrap deixar tabela responsiva-->
                         <thead class="thead-dark">
                             <tr>
+                                <th>Id do usuário</th>
                                 <th>Id</th>
                                 <th>Título</th>
-                                <th>Completo</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,14 +66,14 @@
         <div>
             <span>Redes Sociais:</span>
             <a href="https://www.linkedin.com/in/lucas-sousa-648899115/" target="_blank"><img class="contatos"
-                    src="../imgs/linkedin.png" alt="linkwdin" title="Linkedin"></a>
+                    src="imgs/linkedin.png" alt="linkwdin" title="Linkedin"></a>
             <a href="https://github.com/luksjesus?tab=repositories" target="_blank"><img class="contatos"
-                    src="../imgs/github.png" alt="github" title="GitHub"></a>
+                    src="imgs/github.png" alt="github" title="GitHub"></a>
             <a href="https://api.whatsapp.com/send?phone=5531993510352" target="_blank"><img class="contatos"
-                    src="../imgs/whatsapp.png" alt="whatsapp" title="Whatsapp"></a>
+                    src="imgs/whatsapp.png" alt="whatsapp" title="Whatsapp"></a>
         </div>
     </footer>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
