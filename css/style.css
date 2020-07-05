@@ -79,7 +79,7 @@ html {
   color: white;
 }
 footer img {
-  width: 2%;
+  width: 1.2%;
   margin: 5px;
 }
 #menuToggle {
@@ -93,10 +93,10 @@ footer img {
   .header {
     background-position: 0px -50px;
     overflow: auto;
-    padding-bottom: 50px;
+    padding-bottom: 65px;
   }
   .logo {
-    width: 10%;
+    width: 40px;
   }
   .footer img {
     width: 5%;
@@ -108,6 +108,10 @@ footer img {
     height: 50px;
     background-position: 0px -100px;
     overflow: auto;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 28px;
   }
 }
 
